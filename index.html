@@ -1,0 +1,70 @@
+<!-- Order Pizza
+Create a website for a pizza company where a user can choose one or more individual toppings (cheese, pepperoni, artichoke, anchovy, etc) and a size to order a pizza and see the final cost.
+
+Allow the user to choose toppings and size for the pizza they'd like to order.
+Create a pizza object constructor with properties for toppings and size.
+Create a prototype method for the cost of a pizza depending on the selections chosen. Use your own formula for this.
+Further Exploration
+If you finish meeting the objectives for this project, consider adding additional features, such as:
+
+Style your site with CSS and images.
+Allow users to order more than one pizza with different toppings.
+Display the list of pizzas ordered as links that can be clicked for details.
+Offer a delivery option that then requires address information. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <script src="/js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="/js/scripts.js" type="text/javascript"></script>
+    <title>Greasy Pizza - Omly the Greasiest</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+
+      </div>
+      <div class="orderOptions">
+        <form class="userInfo">
+          <label for="name">What's your name, Greasy Pizza eater?</label>
+          <input id="userName" type="text">
+          <button type="submit" class="btn" id="submitName">Let's start picking toppings!</button>
+        </form>
+        <div id="toppingsSelect">
+          <form id="toppingsList">
+            <div class="form-group">
+              <h3>The Greasy Fixings</h3>
+              <input type="checkbox" name="toppings" value="marinara">Spicy Marinara Sauce</input>
+              <input type="checkbox" name="toppings" value="mozerella">Mounds of Mozerella</input>
+              <input type="checkbox" name="toppings" value="mushrooms">Fresh mushrooms</input>
+              <input type="checkbox" name="toppings" value="olives">Olives</input>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="small">10in. Personal Pie
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="medium">15in. Medium Pie
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="large">20in. Family Pie
+              </label>
+            </div>
+            <button type="submit" class="btn" id="submitOrder">Total</button>
+          </form>
+        </div>
+      </div>
+      <div class="orderSummary">
+
+      </div>
+
+    </div>
+
+  </body>
+</html>
