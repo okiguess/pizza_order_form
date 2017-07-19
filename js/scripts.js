@@ -27,7 +27,7 @@ Pizza.prototype.pizzaOrder = function() {
   } else if (this.size === "large") {
     this.price = 20 + toppingsTotal;
   }
-  $(".orderSummary").text("Get ready for some Greasy Pizza," + this.name + "!" + "Your total is $" + this.price);
+  $(".orderSummary").text("Get ready for some Greasy Pizza, " + this.name + "!" + " Your total is $" + this.price);
 }
 
 // Front-end logic
