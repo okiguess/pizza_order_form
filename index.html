@@ -15,23 +15,37 @@ Offer a delivery option that then requires address information. -->
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="/css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    <script src="/js/jquery-3.2.1.js" type="text/javascript"></script>
-    <script src="/js/scripts.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <script src="js/jquery-3.2.1.js" type="text/javascript"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
     <title>Greasy Pizza - Omly the Greasiest</title>
   </head>
   <body>
     <div class="container">
       <div class="jumbotron">
-
       </div>
+      <form class="userInfo">
+        <label for="name">What's your name, Greasy Pizza eater?</label>
+        <input id="userName" type="text">
+        <button type="submit" class="btn" id="nameSubmit">Let's start picking toppings!</button>
+      </form>
       <div class="orderOptions">
-        <form class="userInfo">
-          <label for="name">What's your name, Greasy Pizza eater?</label>
-          <input id="userName" type="text">
-          <button type="submit" class="btn" id="submitName">Let's start picking toppings!</button>
-        </form>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="small">12-inch (not enough)
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="medium">16-inch (the responsible options)
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="size" value="large">42-inch FAT MAN (you're doing it right)
+          </label>
+        </div>
         <div id="toppingsSelect">
           <form id="toppingsList">
             <div class="form-group">
@@ -39,32 +53,14 @@ Offer a delivery option that then requires address information. -->
               <input type="checkbox" name="toppings" value="marinara">Spicy Marinara Sauce</input>
               <input type="checkbox" name="toppings" value="mozerella">Mounds of Mozerella</input>
               <input type="checkbox" name="toppings" value="mushrooms">Fresh mushrooms</input>
-              <input type="checkbox" name="toppings" value="olives">Olives</input>
+              <input type="checkbox" name="toppings" value="olives">Succulent olives</input>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="small">10in. Personal Pie
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="medium">15in. Medium Pie
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="size" value="large">20in. Family Pie
-              </label>
-            </div>
-            <button type="submit" class="btn" id="submitOrder">Total</button>
+            <button type="submit" class="btn" id="submit">Let's make that pizza!</button>
           </form>
         </div>
       </div>
       <div class="orderSummary">
-
       </div>
-
     </div>
-
   </body>
 </html>
