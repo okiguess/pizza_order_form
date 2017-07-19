@@ -5,3 +5,25 @@
 .orderOptions {
   display: none;
 }
+
+.container {
+  background-image: url("pizza.jpg");
+  color: #FFFFFF;
+}
+
+.jumbotron {
+  background-color: #000000;
+  width: 100%;
+}
+
+.btn {
+  background-color: #1cb4ac;
+}
+
+#userName {
+  color: #000000;
+}
+
+.orderSummary {
+  font-size: 42px;
+}
